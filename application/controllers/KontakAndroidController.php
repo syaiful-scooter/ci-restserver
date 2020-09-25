@@ -11,6 +11,7 @@ class KontakAndroidController extends REST_Controller
     function __construct($config = 'rest')
     {
         parent::__construct($config);
+        $this->load->database();
     }
 
     //Menampilkan data kontak
